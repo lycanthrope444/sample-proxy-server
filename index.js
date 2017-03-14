@@ -14,7 +14,7 @@ app.get('/testing', function(req, res){ // listens for request on /api route
 
 var apikey = process.env.APIKEY;
 app.get('/apikeytest', function(req, res){
-  console.log(apikey);
+  console.log('still working');
 });
 
 
