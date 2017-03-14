@@ -12,6 +12,10 @@ app.get('/testing', function(req, res){ // listens for request on /api route
 
 /* PUT YOUR CODE BETWEEN COMMENTS */
 
+var apikey = process.env.APIKEY;
+app.get('/apikeytest', function(req, res){
+  console.log(apikey);
+});
 
 
 /* PUT YOUR CODE ABOVE THIS COMMENT */
