@@ -39,6 +39,17 @@ app.get('/:cat/:id', function(req, res){
   });
 });
 
+app.get('/:cat/:id/:focus', function(req, res){
+  // var category = req.query.cat;
+  // var searchTerm = req.query.searchTerm;
+
+  var url = MARVEL_API + req.url + apikey;
+
+  request(url, function(error, response, body){
+    res.send(body);
+  });
+});
+
 // app.use('/', function(req, res) {
 //   var url = MARVEL_API + req.url + "?"+ apikey;
 //   req.pipe(request(url)).pipe(res);
