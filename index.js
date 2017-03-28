@@ -15,8 +15,6 @@ app.get('/testing', function(req, res){ // listens for request on /api route
 var apikey = require('./apikey').apikey;
 var MARVEL_API = 'https://gateway.marvel.com/v1/public';
 
-// 'https://gateway.marvel.com/v1/public/comics?ts=1&apikey=73d781f8f57972356e08d844d2d317ac&hash=b9607c3d076294ec15fcf9c16522f8a5'
-
 app.get('/:cat', function(req, res){
   // var category = req.query.cat;
   // var searchTerm = req.query.searchTerm;
